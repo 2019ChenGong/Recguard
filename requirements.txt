@@ -1,0 +1,21 @@
+# Experiment environment (Python 3.12). Versions are the ones used for the paper's runs.
+openai==2.53.0
+openai-agents==0.19.4          # OpenAI Agents SDK sandbox memory (framework "OpenAI-SM")
+qwen-agent==0.0.34             # writer agent and the RAG framework
+mem0ai==2.0.1                  # framework "Mem0"
+chromadb==1.5.8
+sentence-transformers==5.4.1   # all-MiniLM-L6-v2 embeddings (MemoryBank, Mem0, Letta embedding server)
+transformers==5.22.1
+safetensors==0.8.0
+torch==2.11.0
+numpy==1.26.4
+httpx==0.28.1
+requests
+tiktoken==0.12.0
+rank-bm25==0.2.2
+jieba==0.42.1
+pydantic==2.13.3
+
+# Separate environments (see README.md):
+#   model server : vllm==0.25.1
+#   Letta server : letta==0.16.8 (+ asyncpg, pg8000, pgvector; PostgreSQL 18 with pgvector)
